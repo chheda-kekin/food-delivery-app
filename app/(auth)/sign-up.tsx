@@ -4,6 +4,7 @@ import { Alert, View } from "react-native";
 
 import CustomButton from "@/components/CustomButton";
 import CustomInput from "@/components/CustomInput";
+import { createUser } from "@/lib/appwrite";
 
 const SignUp = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -14,15 +15,17 @@ const SignUp = () => {
     });
 
     const submit = async () => {
-        setIsSubmitting(true);
-        if(! form.email || ! form.password || ! form.name) {
-            Alert.alert("Error", "Please details");
-            setIsSubmitting(false);
+
+        const { name, email, password } = form;
+
+        if(! email || ! password || ! name) {
+            return Alert.alert("Error", "Please enter details");
         } else {
+            setIsSubmitting(true);
             try {
-                Alert.alert("Success", "Details saved successfully!");
+                await createUser({name, email, password});
                 router.replace("/");
-            } catch(error) {
+            } catch(error: any) {
                 Alert.alert("Error", error.message);
             } finally {
                 setIsSubmitting(false);
