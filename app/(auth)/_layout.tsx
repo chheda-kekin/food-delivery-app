@@ -1,6 +1,11 @@
 import { images } from "@/constants";
 import { Slot } from "expo-router";
-import { Dimensions, Image, ImageBackground, KeyboardAvoidingView, Platform, ScrollView, View } from "react-native";
+import {
+    Dimensions, Image, ImageBackground, KeyboardAvoidingView,
+    Platform, ScrollView, View
+} from "react-native";
+
+
 // import { ScrollView } from "react-native-reanimated/lib/typescript/Animated";
 
 const screenHeight = Dimensions.get("screen").height;
@@ -13,8 +18,9 @@ const _Layout = () => {
                     <ImageBackground source={images.loginGraphic} resizeMode="stretch" className="size-full rounded-b-lg" />
                     <Image source={images.logo} className="self-center size-48 absolute -bottom-16  z-10" />
                 </View>
+                <Slot />
             </ScrollView>
-            <Slot />
+            
         </KeyboardAvoidingView>
     )
 }
