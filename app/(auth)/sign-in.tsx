@@ -1,3 +1,4 @@
+import * as Sentry from "@sentry/react-native";
 import { Link, router } from "expo-router";
 import { useState } from "react";
 import { Alert, Text, View } from "react-native";
@@ -5,6 +6,8 @@ import { Alert, Text, View } from "react-native";
 import CustomButton from "@/components/CustomButton";
 import CustomInput from "@/components/CustomInput";
 import { signIn } from "@/lib/appwrite";
+
+
 
 const SignIn = () => {
 
@@ -27,6 +30,7 @@ const SignIn = () => {
                 router.replace("/");
                 // Alert.alert("Success", "User signed in successfully!");
             } catch(error: any) {
+                Sentry.captureEvent(error);
                 return Alert.alert("Error", error.message);
             } finally {
                 setIsSubmitting(false);

@@ -24,6 +24,14 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "react-native",
+          "organization": "tech-ventures-0h"
+        }
+      ],
       "expo-router",
       [
         "expo-splash-screen",
@@ -34,7 +42,15 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      "expo-font"
+      "expo-font",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "react-native",
+          "organization": "tech-ventures-0h"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
