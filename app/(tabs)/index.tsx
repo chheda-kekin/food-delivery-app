@@ -54,7 +54,6 @@ export default function Index() {
                 <Image source={images.arrowDown} resizeMode="contain" className="size-3"/>
               </TouchableOpacity>
             </View>
-
             <CartButton />
         </View>  
       )} />      
