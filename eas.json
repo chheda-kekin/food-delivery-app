@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 16.18.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "SENTRY_SKIP_AUTO_RELEASE": "1",
+        "EXPO_PUBLIC_APPWRITE_PROJECT_ID": "687ca954000471de7eb3",
+        "EXPO_PUBLIC_APPWRITE_ENDPOINT": "https://syd.cloud.appwrite.io/v1"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "SENTRY_SKIP_AUTO_RELEASE": "1",
+        "EXPO_PUBLIC_APPWRITE_PROJECT_ID": "687ca954000471de7eb3",
+        "EXPO_PUBLIC_APPWRITE_ENDPOINT": "https://syd.cloud.appwrite.io/v1"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

@@ -57,10 +57,11 @@ const Search = () => {
 
             return (
             <View className={cn("flex-1 max-w-[48%]", isEvenItem ? "mt-10" : "mt-0")}>  
-                <MenuCard name={item.name} 
-                            index={index}
-                            price={item.price} 
-                            imageUrl={item.image_url}  />
+                <MenuCard name={item.name}
+                          id={item.$id}
+                          index={index}
+                          price={item.price}
+                          imageUrl={item.image_url}  />
             </View>)
         }}
         keyExtractor={(item) => {
@@ -84,7 +85,6 @@ const Search = () => {
             <Filter categories={categories as Category[]} />
         </View>)}  
         ListEmptyComponent={()=> !loading && <Text>No Results!</Text>}/>
-      <Text>Search</Text>
     </SafeAreaView>
   );
 };

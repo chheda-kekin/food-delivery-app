@@ -1,6 +1,10 @@
 import cn from "clsx";
+import { router } from "expo-router";
 import { Fragment } from "react";
-import { FlatList, Image, Pressable, Text, TouchableOpacity, View } from "react-native";
+import {
+  FlatList, Image,
+  Pressable, Text, TouchableOpacity, View
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import CartButton from "@/components/CartButton";
@@ -32,7 +36,11 @@ export default function Index() {
                 <Text className="leading-tight text-4xl font-bold text-white">
                   {listItem.item.title}
                 </Text>
-                <Image source={images.arrowRight} className="size-10" resizeMode="contain" tintColor={"#ffffff"} />
+                <Pressable onPress={() => router.push(`/search?category=${listItem.item.category}`)}>
+                    <Image source={images.arrowRight}
+                    className="size-10" resizeMode="contain"
+                    tintColor={"#ffffff"} />
+                </Pressable>
               </View>
             </Fragment>
           )

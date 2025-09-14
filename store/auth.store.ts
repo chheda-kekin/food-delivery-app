@@ -2,7 +2,7 @@ import { User } from '@/type';
 import { create } from 'zustand';
 
 import { getCurrentUser } from '@/lib/appwrite';
-import * as Sentry from "@sentry/react-native";
+// import * as Sentry from "@sentry/react-native";
 
 type AuthState = {
     isAuthenticated: boolean;
@@ -37,7 +37,7 @@ const useAuthStore = create<AuthState>((set) => ({
         }
         return;
     } catch(error: any) {
-        Sentry.captureEvent(error);
+        // Sentry.captureEvent(error);
         set({isAuthenticated: false, user: null})
         throw error;
     } finally {

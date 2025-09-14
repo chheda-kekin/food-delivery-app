@@ -1,29 +1,29 @@
 import { SplashScreen, Stack } from "expo-router";
 
-import * as Sentry from '@sentry/react-native';
+// import * as Sentry from '@sentry/react-native';
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
 import "./globals.css";
 
 import useAuthStore from "@/store/auth.store";
 
-Sentry.init({
-  dsn: 'https://0e61296eb8e899763678115db42d541d@o4509820238430208.ingest.us.sentry.io/4509820239609856',
+// Sentry.init({
+//   dsn: 'https://0e61296eb8e899763678115db42d541d@o4509820238430208.ingest.us.sentry.io/4509820239609856',
 
-  // Adds more context data to events (IP address, cookies, user, etc.)
-  // For more information, visit: https://docs.sentry.io/platforms/react-native/data-management/data-collected/
-  sendDefaultPii: true,
+//   // Adds more context data to events (IP address, cookies, user, etc.)
+//   // For more information, visit: https://docs.sentry.io/platforms/react-native/data-management/data-collected/
+//   sendDefaultPii: true,
 
-  // Configure Session Replay
-  replaysSessionSampleRate: 0.1,
-  replaysOnErrorSampleRate: 1,
-  integrations: [Sentry.mobileReplayIntegration(), Sentry.feedbackIntegration()],
+//   // Configure Session Replay
+//   replaysSessionSampleRate: 0.1,
+//   replaysOnErrorSampleRate: 1,
+//   integrations: [Sentry.mobileReplayIntegration(), Sentry.feedbackIntegration()],
 
-  // uncomment the line below to enable Spotlight (https://spotlightjs.com)
-  // spotlight: __DEV__,
-});
+//   // uncomment the line below to enable Spotlight (https://spotlightjs.com)
+//   // spotlight: __DEV__,
+// });
 
-export default Sentry.wrap(function RootLayout() {
+export default function RootLayout() {
 
   const {isLoading, fetchAuthenticatedUser} = useAuthStore();
 
@@ -53,4 +53,4 @@ export default Sentry.wrap(function RootLayout() {
   }
 
   return <Stack screenOptions={{headerShown: false}} />;
-});
+};

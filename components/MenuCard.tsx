@@ -1,3 +1,4 @@
+import { useCartStore } from "@/store/cart.store";
 import React from "react";
 import { Image, Pressable, Text } from "react-native";
 
@@ -9,7 +10,9 @@ const fetchImage = async (url: string) => {
   return URL.createObjectURL(imageBlob);
 };
 
-const MenuCard: React.FC<any> = ({ name, index, imageUrl, price }) => {
+const MenuCard: React.FC<any> = ({ name, index, imageUrl, price, id }) => {
+
+  const { addItem } = useCartStore();
 
   return (
       <Pressable className="menu-card" style={{  shadowColor: "#000000", shadowOpacity: 0.5, shadowOffset: {width: 0, height: 4}, shadowRadius: 4, elevation: 4 }}>
@@ -23,7 +26,7 @@ const MenuCard: React.FC<any> = ({ name, index, imageUrl, price }) => {
         <Text className="text-center text-dark-100 font-bold mb-2" 
           numberOfLines={1}>{ name }</Text>
         <Text className="text-gray-200 body-regular mb-4">From {price} INR</Text>
-        <Pressable>
+        <Pressable onPress={() => addItem({id, name, price, image_url: imageUrl, customizations: []})}>
           <Text className="text-primary paragraph-bold font-bold">Add to Cart +</Text>
         </Pressable>  
       </Pressable>
