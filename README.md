@@ -12,9 +12,12 @@ An app developed for both android & iOS using ReactNative with managed workflow 
 * NativeWind
 * TypeScript
 
+## Give it a try!
+
+
 ## Screenshots
 
 ## Pending Work / TODO
-- [] Add payment service by integrating Stripe SDK
-- [] Adding functionality to track user's current location
-- [] Giving provision to user for adding Side Ons while ordering a food item
+- Add payment service by integrating Stripe SDK
+- Adding functionality to track user's current location
+- Giving provision to user for adding Side Ons while ordering a food item
