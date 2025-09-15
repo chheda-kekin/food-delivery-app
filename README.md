@@ -14,6 +14,13 @@ An app developed for both android & iOS using ReactNative with managed workflow 
 
 ## Give it a try!
 
+- Download the latest Android APK (https://your-domain.com/path/to/your-app.apk)
+
+- Credentials
+
+Username: kekin.chheda@hotmail.com 
+Password: Good#1Hope
+
 
 ## Screenshots
 
