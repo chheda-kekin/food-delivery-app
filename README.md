@@ -28,7 +28,8 @@ Selecting & adding food items to the cart.
 
 - **APK**: https://expo.dev/artifacts/eas/aFMsBhWhgx1kXSVa1CXqeq.apk
 
-- **Username**: kekin.chheda@hotmail.com - **Password**: Good#1Hope
+- **Username**: kekin.chheda@hotmail.com 
+ - **Password**: Good#1Hope
 
 
 
