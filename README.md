@@ -14,7 +14,7 @@ An app developed for both android & iOS using ReactNative with managed workflow 
 
 ## Give it a try!
 
-- Download the latest Android APK (https://your-domain.com/path/to/your-app.apk)
+- Download the latest Android APK (https://expo.dev/artifacts/eas/aFMsBhWhgx1kXSVa1CXqeq.apk)
 
 - Credentials
 
