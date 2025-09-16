@@ -23,7 +23,7 @@ Search dish by name or cuisine type. Also filter food items with their correspon
 
 - Download the latest Android APK (https://expo.dev/artifacts/eas/aFMsBhWhgx1kXSVa1CXqeq.apk)
 
-- Credentials [Username: kekin.chheda@hotmail.com Password: Good#1Hope]
+- Credentials [**Username**: kekin.chheda@hotmail.com **Password**: Good#1Hope]
 
 
 
