@@ -3,6 +3,14 @@
 An app developed for both android & iOS platforms using ReactNative.
 
 ## Functionality
+this is the primary app where users browse food items by category & order them.
+
+### Core functionalities
+- Onboarding & Authentication
+Users can sign up by their email & sign in later on with the same email
+
+- Food Discovery
+Search dish by name or cuisine type. Also filter food items with their corresponding category.
 
 
 ## Technology Stack Used
