@@ -1,6 +1,6 @@
 # Food Delivery App 
 
-An app developed for both android & iOS using ReactNative with managed workflow of Expo.
+An app developed for both android & iOS platforms using ReactNative.
 
 ## Functionality
 
