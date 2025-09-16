@@ -7,7 +7,7 @@ An app developed for both android & iOS using ReactNative with managed workflow 
 
 ## Technology Stack Used
 
-* ReactNative (Expo CLI)
+* ReactNative
 * Zustand
 * NativeWind
 * TypeScript
