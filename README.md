@@ -33,6 +33,6 @@ Selecting & adding food items to the cart.
 
 
 ## Pending Work / TODO
-- Add payment service by integrating Stripe SDK
+- Adding payment service by integrating Stripe SDK
 - Adding functionality to track user's current location
 - Giving provision to user for adding Side Ons while ordering a food item
