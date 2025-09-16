@@ -16,10 +16,8 @@ An app developed for both android & iOS platforms using ReactNative.
 
 - Download the latest Android APK (https://expo.dev/artifacts/eas/aFMsBhWhgx1kXSVa1CXqeq.apk)
 
-- Credentials
+- Credentials [Username: kekin.chheda@hotmail.com Password: Good#1Hope]
 
-Username: kekin.chheda@hotmail.com 
-Password: Good#1Hope
 
 
 ## Screenshots
