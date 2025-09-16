@@ -26,9 +26,9 @@ Selecting & adding food items to the cart.
 
 ## Give it a try!
 
-- Download the latest Android APK (https://expo.dev/artifacts/eas/aFMsBhWhgx1kXSVa1CXqeq.apk)
+- **APK**: https://expo.dev/artifacts/eas/aFMsBhWhgx1kXSVa1CXqeq.apk
 
-- Credentials [**Username**: kekin.chheda@hotmail.com **Password**: Good#1Hope]
+- **Username**: kekin.chheda@hotmail.com - **Password**: Good#1Hope
 
 
 
